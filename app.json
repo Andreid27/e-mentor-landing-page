@@ -1,0 +1,14 @@
+{
+  "name": "E-mentor - Platforma ta de pregătire pentru admiterea la medicină",
+  "description": "Dacă vrei să intri la medicină sau să te pregătești pentru biologie la BAC, E-mentor este platforma ta de încredere. Aici vei găsi toate materialele necesare.",
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
