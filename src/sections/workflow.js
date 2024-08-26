@@ -12,25 +12,25 @@ const data = [
     id: 1,
     title: 'Îți creezi cont pe platformă',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Completezi cei 3 pași ai formuralui de înscriere și poți începe să înveți alături de E-mentor.',
   },
   {
     id: 2,
     title: 'Parcurgi lecțiile',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Parcurgi lecțiile asignate de profesorul tău și astfel vei învăța biologia ușor, pe înțelesul tău.',
   },
   {
     id: 3,
     title: 'Îți testezi cunoștințele sau... te întorci la pasul 2',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Vei rezolva contra cronometru testele primite de la profesorul tău.',
   },
   {
     id: 4,
-    title: 'Îți atingi obiectul de a avea numai teste cu eticheta verde',
+    title: 'Îți atingi obiectivul de a avea numai teste cu eticheta verde',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Odată ce ai reușit să ai numai teste cu eticheta verde, ești pregătit pentru admiterea la medicină.',
   },
 ];
 

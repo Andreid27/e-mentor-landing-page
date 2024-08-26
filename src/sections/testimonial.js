@@ -5,53 +5,54 @@ import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
 
-import Avatar1 from 'assets/testimonial/avatar1.png';
-import Avatar2 from 'assets/testimonial/avatar2.png';
-import Avatar3 from 'assets/testimonial/avatar3.png';
-import Avatar4 from 'assets/testimonial/avatar4.png';
+import Avatar1 from 'assets/testimonial/avatar1.svg';
+import Avatar2 from 'assets/testimonial/avatar2.svg';
+// import Avatar3 from 'assets/testimonial/avatar3.png';
+// import Avatar4 from 'assets/testimonial/avatar4.png';
 
 const data = [
   {
     id: 1,
-    title: 'Modern look & trending design',
+    title: 'Materiale de calitate și structură bine organizată',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+      'Platforma E-mentor m-a ajutat enorm în pregătirea pentru admitere. Materialele sunt foarte bine structurate, iar explicațiile sunt clare și ușor de înțeles. Recomand cu încredere atât platforma cât și pe doamna profesoară!',
     avatar: Avatar1,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
-    review: 4,
+    name: 'Costin',
+    designation: 'admis la medicină generală - UMFCD 2024',
+    review: 5,
   },
   {
     id: 2,
-    title: 'Design Quality & performance',
+    title: 'Profesoară dedicată și aplicația ușor de folosit',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+      'Interfața E-mentor este foarte intuitivă, iar suportul oferit de echipa lor este rapid și eficient. Am reușit să îmi îmbunătățesc rezultatele considerabil într-un timp scurt. Profesoara m-a ajutat să îmi lămresc foarte multe neclarități pe care le aveam înainte.',
     avatar: Avatar2,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
+    name: 'Diana',
+    designation: 'admisă la medicină generală - UMFCD 2024',
     review: 5,
   },
   {
     id: 3,
-    title: 'Layout and organized layers',
+    title: 'Teste foarte bune și explicații de nota 10',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar3,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
+      'Testele oferite pe platformă sunt foarte relevante și m-au ajutat să îmi identific punctele slabe. Doamna profesoara este de nota 10: explicațiile și feedback-ul primit a fost întotdeauna cele mai bune și m-au motivat să continui pregătirea.',
+    avatar: Avatar1,
+    name: 'Arthur',
+    designation: 'admis la medicină generală - UMFCD 2023',
     review: 5,
   },
-  {
-    id: 4,
-    title: 'Modern look & trending design',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar4,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
-    review: 4,
-  },
+  // {
+  //   id: 4,
+  //   title: 'Accesibilitate și varietate de resurse',
+  //   description:
+  //     'E-mentor oferă o gamă largă de resurse care sunt accesibile oriunde și oricând. Este soluția perfectă pentru cei care doresc să învețe în propriul ritm și să se pregătească temeinic pentru admitere.',
+  //   avatar: Avatar4,
+  //   name: 'Ioana Georgescu',
+  //   designation: '@ioana.geo',
+  //   review: 5,
+  // },
 ];
+
 
 const responsive = {
   desktop: {
@@ -80,7 +81,7 @@ export default function TestimonialCard() {
   return (
     <section id="testimonial" sx={{ variant: 'section.testimonial' }}>
       <Container>
-        <SectionHeader slogan="Testimonial" title="Meet Client Satisfaction" />
+        <SectionHeader slogan="Testimonial" title="Ce spun studenții E-mentor" />
       </Container>
       <Box sx={styles.carouselWrapper}>
         <Carousel

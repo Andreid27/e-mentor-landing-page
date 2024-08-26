@@ -4,44 +4,40 @@ import SectionHeader from 'components/section-header';
 import Accordion from 'components/accordion/accordion';
 const faqs = [
   {
-    title: 'How to contact with riders emergency ?',
+    title: '⁠Cu cât timp înainte ar trebui să încep pregătirea?',
     contents: (
       <div>
-        Get your website ads tests delivered at let collect sample from the
-        victory of the managements that supplies best design system which
-        guidelines ever with multiple features.
+        Recomandat ar fi din clasa a 11-a, semestrul 2; iar ideal - din semestrul 1. 
       </div>
     ),
   },
   {
-    title: 'App installation failed, how to update system information?',
+    title: 'Cât timp este nevoie să aloc învățatului?',
     contents: (
       <div>
-        Rhino skin maybe thick but it can be quite sensitive to sunburns and
-        insect bites which is why they like wallow so much – when the mud dries
-        it acts as protection from the sunburns and insects.
+       Muult! Zilnic. Și în mod constant. Pentru a intra la medicină este nevoie de un efort permanent și de muncă depusă cu seriozitate, așa că fii pregătit pentru asta!
+
       </div>
     ),
   },
   {
-    title: `Website response taking time, how to improve?`,
+    title: `De ce materiale suplimentare am nevoie pentru a fi bine pregătit la examenul de admitere?`,
     contents: (
       <div>
-        Get your blood tests delivered at the home collect a sample from
-        management news. Get your blood tests delivered at the home collect a
-        sample from management news. Get your blood tests delivered at the home
-        collect a sample from management news. Get your blood tests delivered at
-        the home.
+        Ai nevoie să înțelegi - nu doar să cunoști - noțiunile din Corint. 
+        Pentru asta va fi nevoie pe alocuri de: atlase de anatomie, desene suplimentare și... explicațiile cuiva care a studiat anatomia în detaliu în facultate. 🙂 
       </div>
     ),
   },
   {
-    title: `New update fixed all bug and issues`,
+    title: `Cum pot avea garanția că voi fi admis?`,
     contents: (
       <div>
-        If you’re looking to hunt a unicorn, but don’t know where to begin, try
-        Lake Superior State University in Sault Ste. Marie, Michigan. Since
-        1971, the university has issued permits to unicorn questers.
+        Atâta timp cât testele tale au numai etichetă verde, 
+        poți fi convins că șansele tale de reușită sunt MAXIME!  
+        Totuși, pentru că stresul acelui moment te poate copleși oricât de bine te-ai fi pregătit în timpul anului, 
+        este necesar să lucrezi și la acest capitol și să înveți cum să-ți gestionezi emoțiile! 
+        Poți lucra la asta pe parcursul anului, atunci când faci teste și grile sub presiunea timpului.
       </div>
     ),
   },
@@ -51,8 +47,8 @@ export default function Faq() {
     <section sx={{ variant: 'section.faq' }}>
       <Container>
         <SectionHeader
-          title="Frequently asked question"
-          slogan="Get your question answer"
+          title="Întrebări frecvente"
+          slogan="Găsește răspunsurul întrebărilor tale"
         />
         <Box
           sx={{

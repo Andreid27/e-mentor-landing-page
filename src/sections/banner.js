@@ -54,7 +54,7 @@ export default function Banner() {
           </Text>
           <Flex>
             <Button variant="whiteButton" aria-label="Înscrie-te acum"
-            onClick={() => window.open('https://e-mentor.ro/register')}>
+            onClick={() =>  window.location.href='https://e-mentor.ro/register'}>
             Înscrie-te acum!
             </Button>
             <>

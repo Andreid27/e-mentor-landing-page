@@ -9,9 +9,9 @@ const data = {
   subTitle: 'Lecții, grile și teste personalizate',
   title: 'Facem biologia pe înțelesul tău!',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.',
-  btnName: 'Get Started',
-  btnURL: '#',
+    'Aici vei găsi lecții foarte bine structurate, cu ilustrații și explicații detaliate, alături de explicații deosebit de ușor de înțeles pentru a reuși să întelegi materia cât mai repede și ușor.',
+  btnName: 'Începe acum',
+  btnURL: 'https://e-mentor.ro/register',
 };
 
 export default function PartnerSection() {

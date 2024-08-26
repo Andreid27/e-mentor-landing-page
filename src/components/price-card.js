@@ -1,4 +1,4 @@
-import { Box, Card, Text, Flex, Heading, Button } from 'theme-ui';
+import { Box, Card, Text, Flex, Heading, Button, Image } from 'theme-ui';
 import React from 'react';
 import List from './list';
 
@@ -7,7 +7,7 @@ export default function PriceCard({
     header,
     name,
     description,
-    priceWithUnit,
+    avatar,
     buttonText = 'Start Free Trial',
     points,
   },
@@ -34,13 +34,16 @@ export default function PriceCard({
             </Text>
           </Box>
           {header && (
-            <Text className="package__price" sx={styles.price}>
-              <span>Starting from</span>
-              <div className="price">
-                {priceWithUnit}
-                <sub>mo</sub>
-              </div>
-            </Text>
+            // <Text className="package__price" sx={styles.price}>
+            //   <span>Starting from</span>
+            //   <div className="price">
+            //     {priceWithUnit}
+            //     <sub>mo</sub>
+            //   </div>
+            // </Text>
+            <div className="image">
+              <Image src={avatar} alt="Profesor Image" />
+            </div>
           )}
         </Flex>
         <List items={points} childStyle={styles.listItem} />
@@ -53,6 +56,9 @@ export default function PriceCard({
           <Button
             variant={header ? 'primary' : 'whiteButton'}
             aria-label={buttonText}
+            onClick={() => {
+               window.location.href='tel:+40 720 464 201';
+            }}
           >
             {buttonText}
           </Button>
@@ -68,10 +74,10 @@ const styles = {
       '0 1 100%',
       null,
       null,
-      '0 1 50%',
-      '0 1 45%',
-      '0 1 40%',
-      '0 1 38.5%',
+      '0 1 70%',  // Increased width from 50% to 60%
+      '0 1 65%',  // Increased width from 45% to 55%
+      '0 1 60%',  // Increased width from 40% to 50%
+      '0 1 58.5%',  // Increased width from 38.5% to 48.5%
     ],
     background: '#2F5392',
     borderRadius: 10,
@@ -107,6 +113,17 @@ const styles = {
         color: 'text',
         opacity: 0.6,
       },
+      '.image': {
+        flexShrink: 0,
+        mr: [0, null, null, 0],
+        display: 'flex',
+        img: {
+          width: '100px',
+          height: '100px',
+          borderRadius: '50%',
+          objectFit: 'cover',
+        },
+      },
     },
   },
   header: {
@@ -131,6 +148,7 @@ const styles = {
     fontSize: [4, null, null, null, 5],
     lineHeight: '23px',
     color: '#ffffff',
+    marginTop: [3, null, '36px'],
     marginBottom: [1, null, '12px'],
   },
   pricingHeader: {

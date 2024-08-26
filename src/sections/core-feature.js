@@ -14,18 +14,18 @@ const data = {
     {
       id: 1,
       imgSrc: Briefcase,
-      altText: 'Procentaj teste copil',
-      title: 'Procentaj teste copil',
+      altText: 'Montorizarea progresului personal',
+      title: 'Montorizarea progresului personal',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'E-mentor este soluția perfectă pentru monitorizarea progresului tău. Aici vei vedea progresul tău în timp real și vei ști exact unde te afli în raport cu obiectivele tale. Testele și grilele sunt construite astfel încât îți arată în mod real atât nivelul de dificultate, dar și locul în care te situezi după fiecare test. În funcție de rezultatele tale, vei primi feedback:',
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: 'Procentaj teste profesor',
-      title: 'Procentaj teste profesor',
+      altText: 'Monitorizarea progresului de către profesor',
+      title: 'Monitorizarea progresului de către profesor',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Profesorul beneficiează de date în timp real despre fiecare student în parte. Astfel, el poate să vadă unde ai nevoie de ajutor și îți poate oferi suportul necesar pentru a-ți atinge obiectivele. În plus, profesorul poate oferi în permanență feedback în legătura cu rezultatele de la testele tale și cu timpul de studiu pe care l-ai acordat fiecărei lecții în parte.',
     },
   ],
 };
@@ -50,6 +50,14 @@ export default function CoreFeature() {
                 <Box sx={styles.wrapper}>
                   <Heading sx={styles.wrapper.title}>{item.title}</Heading>
                   <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
+                  {item.title == 'Montorizarea progresului personal'  ? 
+                 (        
+                  <div>
+                  <div style={styles.error}>Mai invață și repetă testul, nu poți trece mai departe</div>
+                  <div style={styles.warning}>Este bine, dar trebuie să mai recapitulezi lecția înainte de a merge mai departe</div>
+                  <div style={styles.success}>Excelent, ești pregătit</div>
+              </div>)
+                  : null}
                 </Box>
               </Box>
             ))}
@@ -158,4 +166,22 @@ const styles = {
       lineHeight: [1.85, null, 2],
     },
   },
+  error: {
+    backgroundColor: '#ea5455',
+    color: 'white',
+    padding: '10px',
+    margin: '10px 0',
+},
+warning: {
+    backgroundColor: '#ff9e43',
+    color: 'white',
+    padding: '10px',
+    margin: '10px 0',
+},
+success: {
+    backgroundColor: '#28c770',
+    color: 'white',
+    padding: '10px',
+    margin: '10px 0',
+},
 };

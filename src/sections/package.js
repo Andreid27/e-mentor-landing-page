@@ -4,72 +4,78 @@ import PriceCard from 'components/price-card';
 import SectionHeader from 'components/section-header';
 import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io';
 import PatternBG from 'assets/patternBG.png';
+import Avatar1 from 'assets/profesor.png';
 
 const packages = [
+  // {
+  //   name: 'Free Plan',
+  //   description: 'For Small teams or office',
+  //   buttonText: 'Signup Now',
+  //   points: [
+  //     {
+  //       icon: <IoIosCheckmarkCircle />,
+  //       text: 'Ultimate access to all course, exercises and assessments',
+  //       isAvailable: true,
+  //     },
+  //     {
+  //       icon: <IoIosCheckmarkCircle />,
+  //       text:
+  //         'Free access for all kind of exercise corrections with downloads.',
+  //       isAvailable: true,
+  //     },
+  //     {
+  //       icon: <IoIosCheckmarkCircle />,
+  //       text: 'Total assessment corrections with free download access system',
+  //       isAvailable: true,
+  //     },
+  //     {
+  //       icon: <IoIosCloseCircle />,
+  //       text: 'Unlimited download of courses on the mobile app contents',
+  //       isAvailable: false,
+  //     },
+  //     {
+  //       icon: <IoIosCloseCircle />,
+  //       text: 'Download and print courses and exercises in PDF',
+  //       isAvailable: false,
+  //     },
+  //   ],
+  // },
   {
-    name: 'Free Plan',
-    description: 'For Small teams or office',
-    buttonText: 'Signup Now',
+    header: 'Profesor',
+    name: 'Drd. dr. Dincă Angela-Maria',
+    description: 'Corint, Barron\'s',
+    avatar: Avatar1,
+    buttonText: 'Contactează-mă',
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
+        text: 'DOCTORAND în cadrul UMF Carol Davila și ofer meditații la BIOLOGIE',
+        isAvailable: true,
+      },
+      {
+        icon: <IoIosCheckmarkCircle />,
+        text: 'MEDIC REZIDENT în specialitatea ONCOLOGIE MEDICALĂ',
+        isAvailable: true,
+      },
+      {
+        icon: <IoIosCheckmarkCircle />,
+        text: 'Mă recomandă răbdarea și dragostea pe care o am pentru copii, dar totodată și pasiunea cu care explic noțiunile greu de înțeles sau corelațiile pe care le fac pentru  mai ușor de înțeles.',
+        isAvailable: true,
+      },
+      {
+        icon: <IoIosCheckmarkCircle />,
+        text: 'Anul acesta elevii mei AU PROMOVAT EXAMENUL DE ADMITERE la UMFCD, având punctaj la biologie >55/60 pct',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
         text:
-          'Free access for all kind of exercise corrections with downloads.',
+          'Dispun de materiale ajutătoare de pe care copiii pot învăța mai ușor dispun de materiale ajutătoare de pe care copiii pot învăța mai ușor.',
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCloseCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
-        isAvailable: false,
-      },
-      {
-        icon: <IoIosCloseCircle />,
-        text: 'Download and print courses and exercises in PDF',
-        isAvailable: false,
-      },
-    ],
-  },
-  {
-    header: 'Recommended',
-    name: 'Premium',
-    description: 'For startup enterprise',
-    priceWithUnit: '$29.99/',
-    buttonText: 'Signup Now',
-    points: [
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text:
-          'Free access for all kind of exercise corrections with downloads.',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Download and print courses and exercises in PDF',
+        text: 'Am intrat din prima încercare la Medicină Generală, UMF Carol Davila în anul 2016, deși nu am făcut meditații nici la biologie, nici la chimie + am luat nota 10 la BACALAUREAT la biologie',
         isAvailable: true,
       },
     ],
@@ -80,8 +86,8 @@ export default function Package() {
     <section id="pricing" sx={styles.pricing}>
       <Container>
         <SectionHeader
-          title="Let’s see how it works"
-          slogan="Whats the function"
+          title="Despre noi"
+          slogan="Profesor"
           isWhite={true}
         />
         <Flex

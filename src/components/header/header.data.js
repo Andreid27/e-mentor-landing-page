@@ -1,11 +1,11 @@
 export default [
   {
     path: 'home',
-    label: 'Home',
+    label: 'Acasă',
   },
   {
     path: 'feature',
-    label: 'Features',
+    label: 'Materiale',
   },
   {
     path: 'testimonial',
@@ -13,6 +13,6 @@ export default [
   },
   {
     path: 'pricing',
-    label: 'Pricing',
+    label: 'Despre noi',
   },
 ];
