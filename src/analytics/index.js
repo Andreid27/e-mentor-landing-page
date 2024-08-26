@@ -1,14 +1,15 @@
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 export const initGA = () => {
   console.log('GA init');
-  ReactGA.initialize('G-YMBFQFBLQM');
+  ReactGA.initialize([{trackingId:'G-YMBFQFBLQM'}]);
 };
 
 export const logPageView = () => {
-  console.log(`Logging pageview for ${window.location.pathname}`);
-  ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
+  const pagePath = window.location.pathname;
+  console.log(`Logging pageview for ${pagePath}`);
+
+  ReactGA.send({ hitType: "pageview", page: pagePath });
 };
 
 export const logEvent = (category = '', action = '') => {
