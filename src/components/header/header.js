@@ -38,7 +38,7 @@ export default function Header({ className }) {
             className="donate__btn"
             variant="secondary"
             aria-label="Login"
-            onClick={() => window.open('https://e-mentor.ro/login')}
+            onClick={() => window.location.href='https://app.e-mentor.ro/login'}
           >
             Login
           </Button>

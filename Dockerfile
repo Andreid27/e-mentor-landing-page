@@ -6,22 +6,6 @@ WORKDIR /app
 
 # Copy package.json and yarn.lock to the working directory
 COPY package.json yarn.lock ./
-
-RUN apk --no-cache add shadow \                                                                   
-    gcc \                                                                                         
-    musl-dev \                                                                                    
-    autoconf \                                                                                    
-    automake \                                                                                    
-    make \                                                                                        
-    libtool \                                                                                     
-    nasm \                                                                                        
-    tiff \                                                                                        
-    jpeg \                                                                                        
-    zlib \                                                                                        
-    zlib-dev \                                                                                    
-    file \                                                                                        
-    pkgconf \                                                                                     
-    && yarn install
 # Install project dependencies
 RUN yarn install
 

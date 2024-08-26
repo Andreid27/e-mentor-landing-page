@@ -11,7 +11,7 @@ const data = {
   description:
     'Aici vei găsi lecții foarte bine structurate, cu ilustrații și explicații detaliate, alături de explicații deosebit de ușor de înțeles pentru a reuși să întelegi materia cât mai repede și ușor.',
   btnName: 'Începe acum',
-  btnURL: 'https://e-mentor.ro/register',
+  btnURL: 'tel:+40 720 464 201',
 };
 
 export default function PartnerSection() {

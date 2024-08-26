@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://startup-app-modern.vercel.app
+Host: https://e-mentor.ro
 
 # Sitemaps
-Sitemap: https://startup-app-modern.vercel.app/sitemap.xml
+Sitemap: https://e-mentor.ro/sitemap.xml
