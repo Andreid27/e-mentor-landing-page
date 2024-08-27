@@ -35,7 +35,7 @@ export default function CoreFeature() {
     <section sx={styles.coreFeature}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={CoreFeatureThumb} alt="Thumbnail" />
+          <Image src={CoreFeatureThumb} alt="E-mentor mobile dual" title="E-mentor te ajută să intri la medicină mobil" />
         </Box>
         <Box sx={styles.contentBox}>
           <Box sx={styles.headingTop}>
@@ -45,7 +45,7 @@ export default function CoreFeature() {
           <Grid gap="15px 0" columns={1} sx={styles.grid}>
             {data.features.map((item) => (
               <Box sx={styles.card} key={item.id}>
-                <Image src={item.imgSrc} alt={item.altText} sx={styles.img} />
+                <Image src={item.imgSrc} alt={item.altText} sx={styles.img} title={item.altText}/>
 
                 <Box sx={styles.wrapper}>
                   <Heading sx={styles.wrapper.title}>{item.title}</Heading>

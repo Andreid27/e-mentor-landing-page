@@ -8,7 +8,7 @@ class CustomDocument extends Document {
 
   render() {
     return (
-      <Html lang="ro-ROU">
+      <Html lang="ro-RO">
         <Head />
         <body>
           <Main />

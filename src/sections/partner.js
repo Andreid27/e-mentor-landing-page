@@ -28,7 +28,7 @@ export default function PartnerSection() {
           />
         </Box>
         <Box sx={{ px: [0, null, '40px', 0] }}>
-          <Image src={Partner} alt="Partner" />
+          <Image src={Partner} alt="Biologia pe întelesul tău" title="Facem biologia pe înțelesul tău"/>
         </Box>
       </Container>
     </section>

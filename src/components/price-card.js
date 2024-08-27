@@ -42,7 +42,7 @@ export default function PriceCard({
             //   </div>
             // </Text>
             <div className="image">
-              <Image src={avatar} alt="Profesor Image" />
+              <Image src={avatar} alt="Profesor Image" title="Drd. dr. Dincă Angie-Maria"/>
             </div>
           )}
         </Flex>
@@ -56,6 +56,7 @@ export default function PriceCard({
           <Button
             variant={header ? 'primary' : 'whiteButton'}
             aria-label={buttonText}
+            title="Număr de telefon"
             onClick={() => {
                window.location.href='tel:+40 720 464 201';
             }}

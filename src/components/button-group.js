@@ -7,10 +7,10 @@ export default function ButtonGroup({ next, previous }) {
     <Flex sx={{ width: '100%' }}>
       <Container>
         <Box sx={styles.buttonGroup}>
-          <button onClick={previous} aria-label="Previous">
+          <button onClick={previous} aria-label="Previous" title='testimonialul anterior'>
             <IoIosArrowRoundBack />
           </button>
-          <button onClick={next} aria-label="Next">
+          <button onClick={next} aria-label="Next"  title='urmatorul testimonial'>
             <IoIosArrowRoundForward />
           </button>
         </Box>

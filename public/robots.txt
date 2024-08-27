@@ -7,3 +7,4 @@ Host: https://e-mentor.ro
 
 # Sitemaps
 Sitemap: https://e-mentor.ro/sitemap.xml
+Sitemap: https://e-mentor.ro/sitemap11.xml

@@ -14,7 +14,7 @@ import { InView } from "react-intersection-observer";
     return (
     <InView as="div" onChange={(inView, entry) => {setAnimate(inView)}}>
       <Box sx={styles.card}>
-        <Image src={src} alt={altText} sx={styles.img} />
+        <Image src={src} alt={altText} sx={styles.img} title={title} />
   
         <Box sx={styles.wrapper}>
           <Heading sx={styles.wrapper.title}>{title}</Heading>

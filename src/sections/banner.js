@@ -53,7 +53,7 @@ export default function Banner() {
            Vezi detalii mai jos sau în videoclipul de prezentare. 
           </Text>
           <Flex>
-            <Button variant="whiteButton" aria-label="Înscrie-te acum"
+            <Button variant="whiteButton" aria-label="Înscrie-te acum" title="Număr de telefon"
             onClick={() =>  window.location.href='tel:+40 720 464 201'}>
             Înscrie-te acum!
             </Button>
@@ -61,7 +61,7 @@ export default function Banner() {
               <ModalVideo
                 channel="youtube"
                 isOpen={videoOpen}
-                videoId="ZNA9rmDsYVE1"
+                videoId="VdYrLs6Yj24"
                 onClose={() => setVideoOpen(false)}
               />
               <Button
@@ -86,7 +86,7 @@ export default function Banner() {
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerThumb} alt="banner" />
+          <Image src={BannerThumb} alt="banner" title='E-mentor mobile'/>
         </Box>
       </Container>
     </section>

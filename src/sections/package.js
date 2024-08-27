@@ -42,7 +42,7 @@ const packages = [
   // },
   {
     header: 'Profesor',
-    name: 'Drd. dr. Dincă Angela-Maria',
+    name: 'Drd. dr. Dincă Angie-Maria',
     description: 'Corint, Barron\'s',
     avatar: Avatar1,
     buttonText: 'Contactează-mă',

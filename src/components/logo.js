@@ -14,7 +14,7 @@ export default function Logo({ src, ...rest }) {
       }}
       {...rest}
     >
-      <Image src={src} alt="startup landing logo" />
+      <Image src={src} alt="E-mentor logo" title="E-mentor - Platfoma ta pentru admiterea la medicină"/>
     </Link>
   );
 }

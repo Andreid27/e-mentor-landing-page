@@ -2,8 +2,8 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'startup apps landing page',
-  author = 'RedQ, Inc',
+  description = 'Cu ajutorul nostru, admiterea la medicină devine mai ușoară! Dacă vrei să intri la medicină sau să te pregătești pentru biologie la BAC, E-mentor este platforma ta de încredere. Aici vei găsi toate materialele necesare.',
+  author = 'E-mentor.ro',
   meta,
   title = 'E-mentor - Admitere la medicină sau pregătire pentru biologie BAC',
 }) {

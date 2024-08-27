@@ -19,7 +19,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="E-mentor - Platforma ta de pregătire pentru admiterea la medicină" />
+          <SEO title="E-mentor - Platforma pentru pregătirea admiterii la medicină" />
           <Banner />
           <KeyFeature />
           <CoreFeature />

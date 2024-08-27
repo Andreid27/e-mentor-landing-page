@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://startup-app-modern.vercel.app',
+  siteUrl: 'https://e-mentor.ro',
   generateRobotsTxt: true,
   // optional
   // robotsTxtOptions: {

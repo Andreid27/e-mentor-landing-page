@@ -8,8 +8,8 @@ import { Link } from 'react-scroll';
 import {
   FaFacebookF,
   FaTwitter,
-  FaGithubAlt,
   FaDribbble,
+  FaInstagram,
 } from 'react-icons/fa';
 import menuItems from './header.data';
 
@@ -23,8 +23,8 @@ const social = [
     icon: <FaTwitter />,
   },
   {
-    path: '/',
-    icon: <FaGithubAlt />,
+    path: 'https://www.instagram.com/ementor.ro/',
+    icon: <FaInstagram />,
   },
   {
     path: '/',
