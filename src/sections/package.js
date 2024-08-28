@@ -78,6 +78,11 @@ const packages = [
         text: 'Am intrat din prima încercare la Medicină Generală, UMF Carol Davila în anul 2016, deși nu am făcut meditații nici la biologie, nici la chimie + am luat nota 10 la BACALAUREAT la biologie',
         isAvailable: true,
       },
+      {
+        icon: <IoIosCheckmarkCircle />,
+        text: 'Telefon: ',
+        isAvailable: true,
+      },
     ],
   },
 ];

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Flex, Box, IconButton } from 'theme-ui';
+import { IoIosCheckmarkCircle } from 'react-icons/io';
+import { Flex, Box, IconButton,Button } from 'theme-ui';
 
 export default function List({ items = [], parentStyle, childStyle }) {
   return (
@@ -23,8 +24,26 @@ export default function List({ items = [], parentStyle, childStyle }) {
             {icon}
           </IconButton>
           {text}
+          {text === 'Telefon: ' ?           <Button
+            variant={'whiteButton'}
+            aria-label={"Telefon: +40 720 464 201"}
+            title="Număr de telefon"
+            onClick={() => {
+               window.location.href='tel:+40 720 464 201';
+            }}
+            sx={{ marginTop: '-10px' }}
+          >
+            +40 720 464 201
+          </Button> : null}
         </Flex>
       ))}
+        <Flex
+          as="li"
+          sx={{ ...childStyle }}
+          key={10}
+        >
+
+        </Flex>
     </Box>
   );
 }

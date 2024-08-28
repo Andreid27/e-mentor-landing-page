@@ -8,7 +8,7 @@ export default function PriceCard({
     name,
     description,
     avatar,
-    buttonText = 'Start Free Trial',
+    buttonText = 'Contactează-mă',
     points,
   },
 }) {
