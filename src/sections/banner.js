@@ -44,7 +44,7 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Cu ajutorul <div>E-mentor,</div> 
+            Cu ajutorul <br/>E-mentor,
             admiterea la medicină devine mai ușoară!
           </Heading>
           <Text as="p" variant="heroSecondary">
